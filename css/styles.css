@@ -529,4 +529,8 @@ a:hover {
 .accordion-flush .accordion-item .accordion-button {
   color: #fff;
 }
+
+.accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #212529;
+}
 /*# sourceMappingURL=styles.css.map */
