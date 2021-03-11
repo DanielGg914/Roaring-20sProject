@@ -1,0 +1,532 @@
+body {
+  font-family: sans-serif;
+  background-color: #212529;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #212529 top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  color: rgba(0, 109, 233, 0.788);
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+a:hover {
+  color: #00e9d6;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  -webkit-box-shadow: 1px 4px 5px black;
+          box-shadow: 1px 4px 5px black;
+}
+
+#landing {
+  padding-bottom: 3rem;
+  width: 100%;
+  height: 100vh;
+  background: url(https://www.pbs.org/wgbh/americanexperience/media/gallery_images/crash-1929_gallery_09.jpg) top right;
+  background-size: cover;
+  position: relative;
+}
+
+#landing::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#landing .landing-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+
+#landing h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-family: fantasy;
+  color: #FFF;
+}
+
+#landing h2 {
+  color: #EEE;
+  margin-bottom: 50px;
+  font-weight: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#landing .btn-scroll {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: rgba(0, 109, 233, 0.788);
+}
+
+#landing .btn-scroll i {
+  font-size: 48px;
+}
+
+#landing .btn-scroll :hover {
+  color: #00e9d6;
+}
+
+.skills {
+  padding-bottom: 3rem;
+}
+
+.skills .section-title {
+  border-bottom: 2px solid #00e9d6;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 0;
+  display: block;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #FFF;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: seashell;
+  -webkit-box-shadow: 5px 4px 1px black;
+          box-shadow: 5px 4px 1px black;
+}
+
+.skills .progress-bar-html {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: htmlProgress;
+          animation-name: htmlProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.skills .progress-bar-css {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: cssProgress;
+          animation-name: cssProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.skills .progress-bar-JS {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: jsProgress;
+          animation-name: jsProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.skills .progress-bar-SASS {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: sassProgress;
+          animation-name: sassProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.skills .progress-bar-jQuery {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: jqueryProgress;
+          animation-name: jqueryProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.skills .progress-bar-BS {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(palegreen), to(rgba(0, 109, 233, 0.788)));
+  background: linear-gradient(to right, palegreen, rgba(0, 109, 233, 0.788));
+  -webkit-animation-name: bsProgress;
+          animation-name: bsProgress;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes htmlProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes htmlProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes cssProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes cssProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes jsProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes jsProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes sassProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes sassProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes jqueryProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes jqueryProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes bsProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes bsProgress {
+  from {
+    width: 0%;
+    -webkit-box-shadow: 10px 0px 10px 10px #0ff;
+            box-shadow: 10px 0px 10px 10px #0ff;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+.resume {
+  padding-bottom: 3rem;
+}
+
+.resume .section-title {
+  border-bottom: 2px solid #00e9d6;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+  text-shadow: #212529 5px 5px 5px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #00e9d6;
+  position: relative;
+  -webkit-animation-name: resume-item;
+          animation-name: resume-item;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  list-style-type: none;
+  text-shadow: #212529 5px 5px 5px;
+}
+
+@-webkit-keyframes resume-item {
+  from {
+    border-left: 0px solid black;
+  }
+  to {
+    border-left: 2px solid #00e9d6;
+  }
+}
+
+@keyframes resume-item {
+  from {
+    border-left: 0px solid black;
+  }
+  to {
+    border-left: 2px solid #00e9d6;
+  }
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00e9d6;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 5px 4px 1px black;
+          box-shadow: 5px 4px 1px black;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 0;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: -2px;
+  top: 0px;
+  background: 0;
+  border: 2px solid #00e9d6;
+  border-radius: 10px;
+}
+
+.contact {
+  padding-bottom: 9rem;
+}
+
+.contact .section-title {
+  border-bottom: 2px solid #00e9d6;
+}
+
+.contact .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.contact .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #00e9d6;
+  position: relative;
+}
+
+.contact .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00e9d6;
+  margin-bottom: 10px;
+}
+
+.contact .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .resume-item ul {
+  padding-left: 20px;
+}
+
+.contact .resume-item ul li {
+  padding-bottom: 0;
+}
+
+.contact .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.contact .resume-item::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: .5;
+  left: -2px;
+  top: 0px;
+  background: 0;
+  border: 2px solid #00e9d6;
+}
+
+#portfolio {
+  padding-bottom: 3rem;
+}
+
+#portfolio .section-title {
+  border-bottom: 2px solid #00e9d6;
+  margin-bottom: 2rem;
+}
+
+#portfolio .row {
+  color: #fff;
+}
+
+#portfolio .btn {
+  -webkit-box-shadow: 3.5px 4px 0px black;
+          box-shadow: 3.5px 4px 0px black;
+}
+
+#portfolio .card {
+  background-color: #1d1f22;
+  -webkit-box-shadow: 7px 8px 0px black;
+          box-shadow: 7px 8px 0px black;
+}
+
+#portfolio .card .view image {
+  width: 215px;
+  height: 200px;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
